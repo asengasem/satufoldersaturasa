@@ -2,7 +2,78 @@
 
 <head>
     <title>Perkembangan JavaScript</title>
-    <link rel="stylesheet" href="biyutifule.css">
+    <style>
+        body {
+    font-family: sans-serif;
+    background-color: skyblue;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.disko {
+    animation: blink 0.2s infinite;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: auto;
+    background-color: cyan;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 9px;  
+    text-align: left;
+}
+
+td:first-child {
+    text-align: center;
+}
+
+th {
+    background-color: gold;
+    color: black;
+    text-align: center;
+}
+
+@keyframes warnawarni {
+    0% {
+        background-color: #FF7F50;
+    }
+    25% {
+        background-color: #FFD700; 
+    }
+    50% {
+        background-color: #32CD32; 
+    }
+    75% {
+        background-color: #1E90FF;
+    }
+    100% {
+        background-color: #FF7F50;
+    }
+}
+
+tr:hover {
+    animation: warnawarni 3s infinite;
+}
+    </style>
 </head>
 
 <body>
