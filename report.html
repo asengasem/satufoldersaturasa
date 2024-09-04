@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Laporan</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="report-container">
+        <h2>Buat Laporan</h2>
+        <form action="server/report_submit.php" method="POST">
+            <label for="activity">Kegiatan:</label>
+            <textarea id="activity" name="activity" required></textarea>
+            
+            <button type="submit">Kirim Laporan</button>
+        </form>
+    </div>
+</body>
+</html>
