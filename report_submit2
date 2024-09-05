@@ -1,0 +1,17 @@
+<?php
+include 'db.php';
+
+session_start();
+$activity = $_POST['activity'];
+$date = date('Y-m-d');
+$user_id = $_SESSION['user_id'];  // Menggunakan session untuk mendapatkan user_id
+
+$sql = "INSERT INTO reports (activity, date, user_id) VALUES ('$activity', '$date', '$user_id')";
+if ($conn->query($sql) === TRUE) {
+    // Kirim email ke atasan
+    include 'send_email.php';
+    header("Location: ../dashboard.html");
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+?>
